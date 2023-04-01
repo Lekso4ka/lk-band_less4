@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+h2 {
+    margin: 0;
+}
+.wrapper {
+    min-height: 100vh;
+    background-color: beige;
+    padding: 30px;
+    margin: auto;
+    max-width: 1020px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-content: flex-start;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 12px;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px springgreen, 0 0 5px #0008;
+    position: relative;
+}
+.card .like {
+    position: absolute;
+    right: 8px;
+    bottom: 6px;
+    color: darkviolet;
+    cursor: pointer;
+}
+.card .pic {
+    height: 100px;
+    width: 100%;
+    background-color: springgreen;
+    background-image: url(https://thumbs.dreamstime.com/b/cute-raccoon-5994655.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.pic.tmp {
+    /* background-image: url(images/default.png); */
+    background-image: url(https://www.24petwatch.com/adobe/dynamicmedia/deliver/dm-aid--494fba93-e183-47b2-bc12-8e5072be390a/24petwatch-hero-web.png);
+    /* background-size: contain; */
+    background-size: auto 80%;
+}
+
