@@ -45,7 +45,7 @@ function setLike(el, id, like) {
         },
         body: JSON.stringify({favorite: like})
     })
-    .then(res => res.json())
+    .then(res => res.blob())
     .then(data => {
         console.log(data);
     })
